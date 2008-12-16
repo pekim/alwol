@@ -1,0 +1,13 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Registration Submitted"
+>
+  <h1>Registration Submitted</h1>
+  
+  <p>
+    You have reserved the user name <strong>${user.username}</strong> .
+  </p>
+  <p>
+    An email has been sent to <strong>${user.emailAddress}</strong> .
+    You will need to read and action the email to confirm activation of the account.
+  </p>
+</html>

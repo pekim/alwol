@@ -1,0 +1,50 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Home page"
+>
+
+        <h1>test-site Start Page</h1>
+
+        <p> This is the start page for this application, a good place to start your modifications.
+            Just to prove this is live: </p>
+
+        <p> The current time is: ${currentTime}. </p>
+
+
+        <p>
+            [<t:pagelink t:page="Index">refresh</t:pagelink>]
+        </p>
+        <p>
+            [<t:pagelink t:page="Login">login</t:pagelink>]
+        </p>
+        <p>
+            [<t:actionlink t:id="verify" context="verificationId">verify action link</t:actionlink>]
+        </p>
+        <p>
+            [<t:pagelink t:id="verifyPl" page="VerifyNewUser" context="verificationId">verify page link</t:pagelink>]
+        </p>
+        
+        <p>
+            name : ${name}
+        </p>
+        
+        <script>
+            function mike() {
+                alert("ddd");
+            }
+        </script>
+
+        
+        <p>
+            <t:zone t:id="output" t:update="mike">
+                index = ${index}
+            </t:zone>
+        </p>
+        <p>
+            <t:actionlink t:id="increment" t:zone="output">increment</t:actionlink>
+            <t:actionlink t:id="reset" t:zone="output">reset</t:actionlink>
+        </p>
+        
+        <t:block t:id="resetContent">
+            The index value has been reset.
+        </t:block>
+</html>

@@ -1,0 +1,13 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Users"
+>
+  <h1>Users</h1>
+
+  <t:grid t:source="users" row="user" 
+        t:reorder="username,emailAddress,firstName,lastName,confirmed, confirmationKey" 
+        t:pagerPosition="both">
+    <t:parameter name="emailaddresscell">
+        <a href="mailto:${user.emailAddress}">${user.emailAddress}</a>
+    </t:parameter>
+  </t:grid>
+</html>

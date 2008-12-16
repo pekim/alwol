@@ -1,0 +1,48 @@
+body {
+  font-family:       arial, verdana, sans-serif;
+  font-size:         85%;
+}
+
+p {
+  margin:            0.5em;
+}
+
+label {
+  font-weight:       bold;
+}
+
+a:focus {
+  outline-color:     black;
+  outline-style:     dotted;
+  outline-width:     1px;
+}
+
+.copyright {
+  font-size:         80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  
+}
+
+h1 {
+  font-size:          140%;
+  margin:             0.5em;  
+}
+
+ul.menu li {
+  margin-bottom:      0.2em;
+}
+
+td {
+  padding:            0.4em 0.2em 0.4em 0.2em;
+}
+
+td.label {
+  text-align:         right;
+  font-weight:        bold;  
+}
+
+.number {
+  text-align:         right;
+}

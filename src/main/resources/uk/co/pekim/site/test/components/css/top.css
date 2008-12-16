@@ -1,0 +1,33 @@
+#top .site-header {
+  position:           absolute;
+  top:                0;
+  left:               0;
+    
+  font-size:          200%;
+  font-weight:        bolder;
+  color:              green;
+}
+
+#top .site-header a {
+  text-decoration:   none;
+}
+
+#top .site-header a:visited {
+  color:              green;
+}
+
+#top .login {
+  position:           absolute;
+  top:                0;
+  right:              0;
+  font-size:          80%;
+}
+
+.login input {
+  margin:             0.2em;
+}
+
+.login input[type=text] {
+  border:             1px solid black;
+  width:              5em;
+}

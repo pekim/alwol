@@ -1,0 +1,23 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Verify New User">
+
+  <h1>Verify New User</h1>
+
+  <t:if test="user">
+    <p>
+      User ${user.username} validated.
+    </p>
+    <p>
+      You can now login (using the password you specified when you registered the account).
+    </p>
+  <t:parameter name="else">
+    <p>
+      No user is waiting to be confirmed with this URL.
+      Please check that the URL corresponds with the one in the email that you received.
+    </p>
+    <p>
+      Note that users must be confirmed within 24 hours of being requested.
+    </p>
+  </t:parameter>
+  </t:if>
+</html>

@@ -1,0 +1,55 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Register" focusLoginForm="false"
+>
+  <h1>Register</h1>
+
+  <form t:type="form" t:id="registerUser" clientValidation="false">
+    <t:errors/>
+    
+    <table>
+      <tr>
+        <td>
+          <t:label for="username">User:</t:label>
+        </td>
+        <td>
+          <t:textfield t:id="username" label="username"/>
+        </td>
+        <td>
+        </td>
+        <td>
+          Enter your desired username. Usernames must be at least ${minUsernameLength} characters. and contains only letters, _ (underscore) and numbers.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <t:label for="password1">Password:</t:label>
+        </td>
+        <td>
+          <t:passwordfield t:id="password1" label="password 1"/>
+        </td>
+        <td>
+          <t:passwordfield t:id="password2" label="password 2"/>
+        </td>
+        <td>
+          Enter your desired password twice. Passwords must be at least ${minPasswordLength} characters.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <t:label for="emailAddress1">Email address:</t:label>
+        </td>
+        <td>
+          <t:textfield t:id="emailAddress1" label="email address 1"/>
+        </td>
+        <td>
+          <t:textfield t:id="emailAddress2" label="email address 2"/>
+        </td>
+        <td>
+          Enter your email address twice. An email will be sent to this address asking you to confirm your registration.
+        </td>
+      </tr>
+    </table>
+
+    <t:submit t:id="register" value="Register"/>
+  </form>
+</html>

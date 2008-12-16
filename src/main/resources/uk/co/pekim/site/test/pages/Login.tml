@@ -1,0 +1,24 @@
+<html t:type="layoutAlex" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Test">
+
+    <h1>Login</h1>
+
+    <form t:type="form" t:id="names" style="border: medium solid gray">
+        <t:errors/>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input t:type="TextField" t:id="firstName"/></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input t:type="TextField" t:id="lastName"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Display"/></td>
+            </tr>
+        </table>
+    </form>
+
+</html>

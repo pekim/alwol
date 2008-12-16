@@ -1,0 +1,23 @@
+<html t:type="layout" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+		title="Database Info"
+>
+  <h1>Database</h1>
+
+  <table>
+    <tr>
+      <td class="label">Freespace size</td>
+      <td class="number">${freespaceSize}</td>
+      <td>bytes</td>
+    </tr>
+    <tr>
+      <td class="label">Freespace entry count</td>
+      <td class="number">${freespaceEntryCount}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="label">Total size</td>
+      <td class="number">${totalSize}</td>
+      <td>bytes</td>
+    </tr>
+  </table>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+    <head>
+        <title>${title} - Awol</title>
+    </head>
+
+    <body>
+        <div id="top">
+            <div class="site-header">
+                <p>
+                    <t:pagelink t:page="Index">Alwol</t:pagelink>
+                </p>
+            </div>
+
+            <div class="login">
+                <form t:type="form" t:id="userLogin" autofocus="${focusLoginForm}">
+                    <t:errors/>
+                    <t:label for="username">User:</t:label>
+                    <t:textfield t:id="username"/>
+                    <t:label for="password">Password:</t:label>
+                    <t:textfield t:id="password"/>
+                    <t:submit t:id="login" value="Login"/>
+                </form>
+
+                <p>
+                    <t:pagelink t:page="Register">register</t:pagelink>
+                    |
+                    <t:pagelink t:page="Register">help</t:pagelink>
+                </p>
+            </div>
+        </div>
+    
+	    <div id="content-wrapper">
+	        <div id="content">
+	            <t:body/>
+	        </div>
+	
+	    </div>
+
+        <div id="left">
+          <ul class="menu">
+            <li>
+              <t:pagelink t:page="Index">Home</t:pagelink>
+            </li>
+            <li>
+              <t:pagelink t:page="Users">Users</t:pagelink>
+            </li>
+            <li>
+              <t:pagelink t:page="DatabaseInfo">Database Info</t:pagelink>
+            </li>
+          </ul>
+        </div>
+
+        <div id="bottom">
+            <p class="copyright">
+                &copy; 2008 Mike D Pilsbury
+            </p>
+        </div>
+    </body>
+</html>

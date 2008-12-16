@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   Copyright 2007 The Apache Software Foundation
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <display-name>test-site Tapestry 5 Application</display-name>
+    <context-param>
+        <!-- The only significant configuration for Tapestry 5, this informs Tapestry
+of where to look for pages, components and mixins. -->
+        <param-name>tapestry.app-package</param-name>
+        <param-value>uk.co.pekim.site.test</param-value>
+    </context-param>
+
+    <!-- URL prefix -->
+    <context-param>
+        <param-name>uk.co.pekim.site.url-prefix</param-name>
+        <param-value>http://localhost:8080</param-value>
+    </context-param>
+    
+    <!-- smtp config -->
+    <context-param>
+        <param-name>uk.co.pekim.site.smtp.server</param-name>
+        <param-value>smtp.fasthosts.co.uk</param-value>
+    </context-param>
+    <context-param>
+        <param-name>uk.co.pekim.site.smtp.username</param-name>
+        <param-value>mike@pekim.co.uk</param-value>
+    </context-param>
+    <context-param>
+        <param-name>uk.co.pekim.site.smtp.password</param-name>
+        <param-value>apple7alex</param-value>
+    </context-param>
+    <context-param>
+        <param-name>uk.co.pekim.site.smtp.from.email</param-name>
+        <param-value>mike@pekim.co.uk</param-value>
+    </context-param>
+    <context-param>
+        <param-name>uk.co.pekim.site.smtp.from.name</param-name>
+        <param-value>Alwol</param-value>
+    </context-param>
+    
+    <!-- The location of the database. -->
+    <context-param>
+        <param-name>uk.co.pekim.site.database</param-name>
+        <param-value>test.db4o</param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>app</filter-name>
+        <filter-class>org.apache.tapestry5.TapestryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>app</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
+      
