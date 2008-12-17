@@ -1,0 +1,16 @@
+<div class="login" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+  <form t:type="form" t:id="userLogin" autofocus="${focusLoginForm}">
+    <t:errors/>
+    <t:label for="username">User:</t:label>
+    <t:textfield t:id="username"/>
+    <t:label for="password">Password:</t:label>
+    <t:textfield t:id="password"/>
+    <t:submit t:id="login" value="Login"/>
+  </form>
+
+  <p>
+    <t:pagelink t:page="Register">register</t:pagelink>
+    |
+    <t:pagelink t:page="Register">help</t:pagelink>
+  </p>
+</div>
