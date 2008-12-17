@@ -20,12 +20,4 @@ public class Layout {
     @Property(read = true, write = false)
     @SuppressWarnings("unused")
     private final boolean focusLoginForm = true;
-
-    @SuppressWarnings("unused")
-    @Property
-    private String username;
-
-    @SuppressWarnings("unused")
-    @Property
-    private String password;
 }
